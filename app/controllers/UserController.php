@@ -15,7 +15,7 @@ class UserController extends Controller {
     {
         $this->call->database();
         $this->call->model('UserModel');
-        $data['users'] = $this->Userodel->all();
+        $data['users'] = $this->UserModel->all();
         $this->call->view('users', $data);
     }
 }
