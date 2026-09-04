@@ -11,14 +11,12 @@ class UserController extends Controller {
     {
         parent::__construct();
     }
+
     public function showUsers()
     {
-        $this->call->database();
-        $this->call->model('UserModel');
-        $data['users'] = $this->UserModel->all();
-        $this->call->view('users', $data);
+      $this->call->database();
+      $this->call->model('UserModel');
+      $data['users'] = $this->UserModel->all();
+      $this->call->view('users', $data);
     }
 }
-
-//goods to
-// di mahanap ung password. Nagtatangatangahan si .env
