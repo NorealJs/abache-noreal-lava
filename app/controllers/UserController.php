@@ -19,3 +19,6 @@ class UserController extends Controller {
         $this->call->view('users', $data);
     }
 }
+
+//goods to
+// di mahanap ung password. Nagtatangatangahan si .env
